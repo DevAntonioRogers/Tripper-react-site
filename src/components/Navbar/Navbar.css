@@ -72,7 +72,7 @@
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 800px){
   .nav-menu{
     position: fixed;
     top: 5.7rem;
@@ -82,6 +82,7 @@
     height: 100%;
     right: 100%;
     transition: all 0.3s ease-in-out;
+    z-index: 3;
     
   }
 

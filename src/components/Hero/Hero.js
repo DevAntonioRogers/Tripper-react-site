@@ -1,4 +1,4 @@
-import './Hero.css'
+import './homeHero.css'
 import { Link } from 'react-router-dom'
 
 function Hero(props) {
@@ -13,7 +13,8 @@ function Hero(props) {
         <p>{props.text}</p>
 
         <div className={props.btnClass}>
-          <Link to={props.btnUrl}>{props.btnTitle}</Link>
+          <Link to={props.primaryBtnUrl}>{props.primaryBtnTitle}</Link>
+          <Link to={props.secondaryBtnUrl}>{props.secondaryBtnTitle}</Link>
         </div>
       </div>
 

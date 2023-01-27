@@ -1,5 +1,5 @@
 import React from "react";
-import hero1 from '../assets/hero2.jpeg'
+import HomeHeroImg from '../assets/hero2.jpeg'
 import Hero from "../components/Hero/Hero";
 
 
@@ -7,20 +7,21 @@ function Home() {
 
   // Hero Content
   const heroHeading = 'Travel Beyond Limits'
-  const heroText = 'Break free from the everyday and discover new horizons'
-  const btnTitle = 'Explore Deals'
+  const primaryBtnTitle = 'Explore Places'
+  const secondaryBtnTitle = 'Explore Cruises'
 
   return (
     <>
       <Hero
         imgClass='home-hero'
-        heroImage={hero1}
+        heroImage={HomeHeroImg}
         textClass='home-text-container'
         title={heroHeading}
-        text={heroText}
-        btnTitle={btnTitle}
+        primaryBtnTitle={primaryBtnTitle}
         btnClass='home-hero-btn'
-        btnUrl='destinations'
+        primaryBtnUrl='destinations'
+        secondaryBtnTitle={secondaryBtnTitle}
+        secondaryBtnUrl='cruises'
       />
 
     </>
