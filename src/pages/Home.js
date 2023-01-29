@@ -15,7 +15,6 @@ function Home() {
   return (
     <>
       <Hero
-        imgClass='home-hero'
         heroImage={HomeHeroImg}
         textClass='home-text-container'
         title={heroHeading}

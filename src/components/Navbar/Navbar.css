@@ -58,6 +58,7 @@
   color: white;
   border-radius: 10px;
   font-size: 1.2rem;
+  transition: 0.5s;
 
 }
 
@@ -67,8 +68,19 @@
   color: white;
   border-radius: 10px;
   font-size: 1.2rem;
+  transition: 0.5s;
 }
 
+.signup-btn:hover{
+  background-color: #4186b1;
+  color: white;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25)
+}
+
+.login-btn:hover{
+  background-color: #2d89c2;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25)
+}
 
 /* MEDIA QUERIES */
 

@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 function Hero(props) {
   return (
     <>
-      <div className={props.class}>
-        <img className={props.imgClass} alt="hero" src={props.heroImage} />
+      <div className={props.className}>
+        <img className='hero' alt="hero" src={props.heroImage} />
       </div>
 
       <div className={props.textClass}>
