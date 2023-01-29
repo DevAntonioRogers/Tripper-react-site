@@ -1,6 +1,7 @@
 import React from "react";
 import HomeHeroImg from '../assets/hero2.jpeg'
 import Hero from "../components/Hero/Hero";
+import BottomHero from "../features/HomePageFeatures/BottomHero";
 
 
 function Home() {
@@ -23,7 +24,7 @@ function Home() {
         secondaryBtnTitle={secondaryBtnTitle}
         secondaryBtnUrl='cruises'
       />
-
+      <BottomHero />
     </>
   )
 }
