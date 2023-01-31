@@ -10,7 +10,6 @@ import {
 // components
 
 import Navbar from './components/Navbar/Navbar'
-import BottomHero from './components/HomeComponents/BottomHero/BottomHero';
 
 // pages
 
@@ -37,7 +36,6 @@ function App() {
   return (
     <div>
       <RouterProvider router={router} />
-      <BottomHero />
     </div>
 
   );
