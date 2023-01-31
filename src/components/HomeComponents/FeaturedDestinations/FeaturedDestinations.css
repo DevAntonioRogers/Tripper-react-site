@@ -1,17 +1,29 @@
 .featured-container{
-  padding: 5rem;
   display: flex;
-  gap: 2rem
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  background-color: #f1faee;
+}
+
+.featured-heading{
+  background-color: #f1faee;
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 3rem 0;
+  color: #1d3557;
+  text-transform: uppercase;
+
 }
 
 .card{
-  width: 350px;
+  width: 300px;
   height: 425px;
   display: flex;
+  background-color: white;
   flex-direction: column;
   overflow: hidden;
   border-radius: 5px;
-  /* border: 1px solid rgba(143, 143, 143, 0.322); */
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   transition: 0.5s;
@@ -70,7 +82,7 @@
 }
 
 .card-location-pricing{
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 2rem
@@ -95,7 +107,7 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 0.6rem;
+  margin-top: 0.4rem;
 }
 
 

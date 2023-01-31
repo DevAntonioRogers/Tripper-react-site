@@ -1,8 +1,8 @@
 import React from "react";
-import HomeHeroImg from '../assets/hero2.jpeg'
+import HomeHeroImg from '../assets/homehero.jpeg'
 import Hero from "../components/Hero/Hero";
 import BottomHero from "../components/HomeComponents/BottomHero/BottomHero";
-import FeaturedDestinations from "../components/HomeComponents/FeaturedDestinations/FeaturedDestinations";
+import FeaturedList from "../components/HomeComponents/FeaturedDestinations/FeaturedList";
 
 
 function Home() {
@@ -25,7 +25,8 @@ function Home() {
         secondaryBtnUrl='cruises'
       />
       <BottomHero />
-      <FeaturedDestinations />
+      <FeaturedList />
+
     </>
   )
 }
