@@ -3,6 +3,7 @@ import HomeHeroImg from '../assets/homehero.jpeg'
 import Hero from "../components/Hero/Hero";
 import BottomHero from "../components/HomeComponents/BottomHero/BottomHero";
 import FeaturedList from "../components/HomeComponents/FeaturedDestinations/FeaturedList";
+import Parallex from "../components/HomeComponents/Parallax Image/Parallex";
 
 
 function Home() {
@@ -25,6 +26,8 @@ function Home() {
         secondaryBtnUrl='cruises'
       />
       <BottomHero />
+      <FeaturedList />
+      <Parallex />
       <FeaturedList />
 
     </>

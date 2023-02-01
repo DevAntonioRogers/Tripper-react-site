@@ -18,7 +18,7 @@
 
 .card{
   width: 300px;
-  height: 425px;
+  height: 410px;
   display: flex;
   background-color: white;
   flex-direction: column;
@@ -90,6 +90,8 @@
 .location-info{
   margin-top: 1.5rem;
   color: #1d3557;
+  text-align: center;
+  padding: 0 2rem;
 }
 
 
@@ -107,7 +109,7 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
 }
 
 
@@ -135,6 +137,6 @@
   border-radius: 10px;
   color: white;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-
-
+ 
+  
 }
