@@ -12,7 +12,6 @@ function FeaturedCard({ featured }) {
     tag2,
     tag3 } = featured;
   return (
-
     <div className="card">
       <div className="card-image">
         <img alt='hi' src={image} />

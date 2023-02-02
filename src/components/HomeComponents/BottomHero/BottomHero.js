@@ -28,10 +28,10 @@ const BottomHero = () => {
           </div>
         </div>
         <div className='bottom-hero--inner'>
-          <i className="fa-solid fa-suitcase-rolling"></i>
+          <i class="fa-solid fa-plane"></i>
           <div className='bottom-hero--text'>
-            <p>First-Hand Experience</p>
-            <p>Thousands of tips & reviews</p>
+            <p>Flights Included</p>
+            <p>All Inclusive Packages</p>
           </div>
         </div>
       </div>

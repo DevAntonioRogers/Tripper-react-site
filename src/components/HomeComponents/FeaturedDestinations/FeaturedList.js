@@ -12,11 +12,12 @@ const FeaturedList = () => {
 
         {featured.map((featured) => {
           return (
-            <div key={featured.id}>
+            <div className="card-featured-container" key={featured.id}>
               <FeaturedCard featured={featured} />
             </div>
           )
         })}
+
       </div>
     </>
   )
