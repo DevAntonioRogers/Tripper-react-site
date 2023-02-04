@@ -4,6 +4,7 @@ import Hero from "../components/Hero/Hero";
 import BottomHero from "../components/HomeComponents/BottomHero/BottomHero";
 import FeaturedList from "../components/HomeComponents/FeaturedDestinations/FeaturedList";
 import Parallex from "../components/HomeComponents/Parallax Image/Parallex";
+import AppSection from "../components/HomeComponents/AppSection/AppSection";
 
 
 function Home() {
@@ -28,7 +29,7 @@ function Home() {
       <BottomHero />
       <FeaturedList />
       <Parallex />
-      <FeaturedList />
+      <AppSection />
 
     </>
   )
