@@ -3,7 +3,7 @@ import AppPicture from '../../../assets/appsection.png'
 import AppleBadge from '../../../assets/applestorebadge.svg'
 import GoogleBadge from '../../../assets/googleplaybadge.svg'
 
-import Newsletter from '../../Newsletter/Newsletter'
+import Newsletter from '../Newsletter/Newsletter'
 
 
 const AppSection = () => {

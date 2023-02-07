@@ -11,17 +11,6 @@
 }
 
 
-.logo i {
-  margin-right: 3px;
-  color: #e63946;
-}
-.logo{
-  font-size: 2.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #457b9d;
-  margin-right: auto;
-}
 
 .nav-menu{
   display: flex;
