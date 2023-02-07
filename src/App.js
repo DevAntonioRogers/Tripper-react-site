@@ -20,6 +20,7 @@ import Cruises from './pages/Cruises';
 import Contact from './pages/Contact';
 
 
+
 // React Router Func
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Navbar />}>
@@ -34,9 +35,9 @@ const router = createBrowserRouter(createRoutesFromElements(
 
 function App() {
   return (
-    <div>
+    <>
       <RouterProvider router={router} />
-    </div>
+    </>
 
   );
 }

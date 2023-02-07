@@ -28,24 +28,36 @@ const Footer = () => {
               <i class="fa-solid fa-calendar-days"></i>
               <p>Available Mon-Fri 7am-5pm</p>
             </div>
+            <span>Live Chat Available 24/7</span>
           </div>
         </div>
 
         <div className='footer-link-box'>
           <h3>Quick Links</h3>
-          <Link to='/'>Home</Link>
-          <Link to='destinations'>Destinations</Link>
-          <Link to='cruises'>Cruises</Link>
-          <Link to='about'>About</Link>
-          <Link to='contact'>Contact</Link>
+          <div className='footer-link-inner'>
+            <Link to='/'>Home</Link>
+            <Link to='destinations'>Destinations</Link>
+            <Link to='cruises'>Cruises</Link>
+            <Link to='about'>About</Link>
+            <Link to='contact'>Contact</Link>
+          </div>
         </div>
 
         <div className='footer-social-box'>
-
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-linkedin"></i>
+          <h3>STAY IN TOUCH!</h3>
+          <div className='footer-socail-details'>
+            <form className='footer-form'>
+              <i class="fa-solid fa-envelope"></i>
+              <input type='email' placeholder='Enter your email address' required />
+              <button type='submit'><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div className='footer-social-icons'>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
         </div>
       </div>
 

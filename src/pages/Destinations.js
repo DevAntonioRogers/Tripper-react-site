@@ -1,6 +1,7 @@
 import Hero from "../components/Hero/Hero";
 import DestinationsHeroImg from '../assets/image2.jpg'
 import '../components/Hero/destinationsHero.css'
+import Footer from "../components/Footer/Footer";
 
 function Destinations() {
   const heroHeading = 'SAVE 60% BY BOOKING WITH US'
@@ -17,7 +18,7 @@ function Destinations() {
         primaryBtnUrl='/'
         secondaryBtnUrl='/'
       />
-
+      <Footer />
     </>
   )
 }
