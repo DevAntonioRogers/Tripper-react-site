@@ -2,11 +2,15 @@ import FeaturedCard from "./FeaturedCard"
 import { selectFeatured } from "../../../shared/Data"
 
 
+
 const FeaturedList = () => {
 
   const featured = selectFeatured()
+
   return (
-    <>
+    <div>
+
+
       <h1 className="featured-heading">Our Featured Destinations</h1>
       <div className="featured-container">
 
@@ -19,7 +23,7 @@ const FeaturedList = () => {
         })}
 
       </div>
-    </>
+    </div>
   )
 
 }
