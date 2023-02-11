@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 800px){
   .nav-menu{
-    position: fixed;
+    position: absolute;
     top: 5.7rem;
     flex-direction: column;
     width: 100%;
@@ -82,7 +82,7 @@
     height: 100%;
     right: 100%;
     transition: all 0.3s ease-in-out;
-    z-index: 3;
+    z-index: 9;
     
   }
 

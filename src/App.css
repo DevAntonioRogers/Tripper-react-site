@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: #f1faee;
+}
+
 html{
   font-size: 62.5%;
 }
@@ -16,6 +20,8 @@ html{
 a{
   text-decoration: none;
 }
+
+
 
 li{
   list-style: none;
@@ -26,6 +32,7 @@ li{
   height: 100vh;
   position: relative;
   object-fit: cover;
+  z-index: 3;
 }
 
 .logo i {
@@ -38,4 +45,8 @@ li{
   text-transform: uppercase;
   color: #457b9d;
   margin-right: auto;
+}
+
+.logo a:visited{
+  color: inherit;
 }

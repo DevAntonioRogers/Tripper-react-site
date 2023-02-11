@@ -2,7 +2,11 @@ import './Newsletter.css'
 import { useState } from 'react'
 
 
+
+
 const Newsletter = () => {
+
+
 
   const [email, setEmail] = useState('')
 
@@ -18,8 +22,9 @@ const Newsletter = () => {
       </div>
 
       <form onSubmit={newsletterFormSumbit} className='newsletter-form'>
-        <input value={email} onChange={e => setEmail(e.target.value)} type='text' placeholder='Enter Email Address' />
-        <button type='sumbit'>SUBSCRIBE</button>
+        <i class="fa-solid fa-envelope"></i>
+        <input value={email} onChange={e => setEmail(e.target.value)} type='text' placeholder='Enter Email Address' required />
+        <i class="fa-solid fa-share"></i>
       </form>
     </div>
   )

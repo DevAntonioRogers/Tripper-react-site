@@ -58,13 +58,20 @@
   gap: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .app-section-container{
     flex-direction: column;
     gap: 4rem;
   }
-
+  
   .app-details-container{
-    gap: 3rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:851px) and (max-width:990px) {
+  .app-section-container{
+    justify-content: space-between;
+    padding: 0 6rem;
   }
 }

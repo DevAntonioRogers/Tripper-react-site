@@ -11,18 +11,29 @@
 }
 
 
+.newsletter-form{
+  display: flex;
+  border-bottom: 2px solid #457b9d5f;
+}
 
+.newsletter-form i{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
 
 .newsletter-form input{
+  background: transparent;
+  border: none;
+  outline: none;
   width: 100%;
-  height: 3rem;
-  border-radius: 5px;
-  border: solid 2px rgba(0, 0, 0, 0.191);
+  margin-bottom: 0.5rem;
 
 }
 
 .newsletter-form input::placeholder{
   text-align: center;
+  color: white;
 }
 
 .newsletter-form button{
@@ -52,9 +63,8 @@
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 850px){
   .newsletter-container{
     width: 100%;
-
   }
 }

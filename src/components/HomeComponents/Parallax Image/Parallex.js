@@ -1,7 +1,10 @@
 import './Parallex.css'
 
 
+
+
 const Parallex = () => {
+
   return (
     <div class="parallax-container">
 
