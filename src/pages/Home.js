@@ -1,5 +1,5 @@
 import React from "react";
-import HomeHeroImg from '../assets/homehero.jpeg'
+import HomeHeroImg from '../assets/homehero.jpg'
 import Hero from "../components/Hero/Hero";
 import BottomHero from "../components/HomeComponents/BottomHero/BottomHero";
 import FeaturedList from "../components/HomeComponents/FeaturedDestinations/FeaturedList";

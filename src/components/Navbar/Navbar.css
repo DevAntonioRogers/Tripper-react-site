@@ -1,7 +1,6 @@
 .nav-container{
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 1.5rem 1rem;
   background-color: #f1faee;
 }
@@ -10,13 +9,15 @@
   display: none;
 }
 
-
+.mobile-btn-container{
+  display: none;
+}
 
 .nav-menu{
   display: flex;
   align-items: center;
   margin-right: auto;
-  justify-content: space-between;
+
   /* gap: 5rem; */
 }
 
@@ -84,6 +85,15 @@
     transition: all 0.3s ease-in-out;
     z-index: 9;
     
+    
+  }
+
+  .nav-menu li{
+    margin-top: 7rem;
+  }
+
+  .nav-link{
+    margin-left: 0;
   }
 
   .nav-menu.active{
@@ -99,6 +109,15 @@
     display: none;
   }
 
+  .mobile-btn-container{
+    display: block;
+    display: flex;
+    gap: 3rem;
+  }
+
+  .mobile-btn-container a:visited{
+    color: inherit;
+  }
 
 }
 

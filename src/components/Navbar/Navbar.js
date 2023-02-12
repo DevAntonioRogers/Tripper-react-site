@@ -74,11 +74,21 @@ function Navbar() {
               </motion.li>
             )
           })}
+
+          <div className="mobile-btn-container">
+            <li className="login-btn">
+              <Link to="/">Login</Link>
+            </li>
+            <li className="signup-btn">
+              <Link to="/">Signup</Link>
+            </li>
+          </div>
         </ul>
         <motion.li animate={animation} className="btn-container">
           <Link className='login-btn' to='/'>Login</Link>
           <Link className='signup-btn' to='/'>SignUp</Link>
         </motion.li>
+
       </nav>
       <Outlet />
     </div>
