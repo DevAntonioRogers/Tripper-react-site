@@ -1,7 +1,9 @@
 import React from "react";
 
 function Cruises() {
-  return <div>Cruises</div>;
+  return (
+    <h1>hi</h1>
+  );
 }
 
 export default Cruises;
