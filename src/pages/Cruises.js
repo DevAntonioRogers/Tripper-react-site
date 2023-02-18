@@ -1,8 +1,11 @@
-import React from "react";
+
 
 function Cruises() {
+
   return (
-    <h1>hi</h1>
+    <>
+      <h1>hello</h1>
+    </>
   );
 }
 

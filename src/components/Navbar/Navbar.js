@@ -5,9 +5,15 @@ import { motion, useAnimation, useInView } from 'framer-motion';
 import { useRef, useEffect, useState } from 'react';
 import './Navbar.css'
 
+// BUTTON COMPONENTS
+import LoginBtn from "../Buttons/LoginBtn";
+import SignUpBtn from "../Buttons/SignUpBtn";
+
+
 
 function Navbar() {
 
+  // ANIMATION TOGGLES
   const ref = useRef(null)
   const isInView = useInView(ref)
   const animation = useAnimation()
@@ -16,7 +22,7 @@ function Navbar() {
     if (isInView) {
       animation.start({
         x: 0,
-        transition: { type: 'spring', bounce: 0.3, duration: 0.5 }
+        transition: { duration: 0.3 }
       })
     }
     if (!isInView) {
@@ -26,6 +32,7 @@ function Navbar() {
     }
   })
 
+  // MOBILE MENU STATE
   const [click, setClick] = useState(false)
 
   const handleClick = () => {
@@ -36,6 +43,7 @@ function Navbar() {
     setClick(false)
   }
 
+  // CANCEL SCROLLING WHEN MOBILE MENU IS TRUE
   useEffect(() => {
     if (click) {
       document.body.style.overflow = 'hidden';
@@ -48,48 +56,35 @@ function Navbar() {
     <div>
       <nav ref={ref} className="nav-container">
         <motion.div
-          className="logo"
           animate={animation}
+          className="logo"
         >
           <Link to='/'>
             <i class="fa-solid fa-location-dot"></i>Tripper
           </Link>
         </motion.div>
-
-        <motion.div
-          animate={animation}
-          className="mobile-icon"
-        >
+        <div className="mobile-icon">
           <i onClick={handleClick} className={click ? 'fa-solid fa-x' : 'fa-solid fa-bars'} />
-        </motion.div>
-
-        <ul onClick={closeMenu} className={click ? 'nav-menu active' : 'nav-menu'}>
-          {NavbarMenuItems.map((item, index) => {
-            return (
-              <motion.li animate={animation} key={index}>
-                <NavLink to={item.url} className={item.className}>
-                  <i className={item.icon} />
-                  {item.title}
-                </NavLink>
-              </motion.li>
-            )
-          })}
-
-          <div className="mobile-btn-container">
-            <li className="login-btn">
-              <Link to="/">Login</Link>
-            </li>
-            <li className="signup-btn">
-              <Link to="/">Signup</Link>
-            </li>
+        </div>
+        <motion.div animate={animation} onClick={closeMenu} className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul>
+            {NavbarMenuItems.map((item, index) => {
+              return (
+                <li key={index}>
+                  <NavLink to={item.url} className={item.className}>
+                    <i className={item.icon} />
+                    {item.title}
+                  </NavLink>
+                </li>
+              )
+            })}
+          </ul>
+          <div className="nav-btn-container">
+            <LoginBtn />
+            <SignUpBtn />
           </div>
-        </ul>
-        <motion.li animate={animation} className="btn-container">
-          <Link className='login-btn' to='/'>Login</Link>
-          <Link className='signup-btn' to='/'>SignUp</Link>
-        </motion.li>
-
-      </nav>
+        </motion.div>
+      </nav >
       <Outlet />
     </div>
   )

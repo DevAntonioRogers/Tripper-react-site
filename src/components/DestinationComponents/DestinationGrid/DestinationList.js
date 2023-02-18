@@ -8,14 +8,14 @@ const DestinationList = () => {
 
   return (
     <>
-      <div>
+      <div className="our-destinations-text">
         <h1>Our Destinations</h1>
       </div>
 
-      <div>
+      <div className="destination-container">
         {destinations.map((destination) => {
           return (
-            <div key={destinations.id}>
+            <div className="destination-inner-container" key={destinations.id}>
               <Destination destination={destination} />
             </div>
           )
