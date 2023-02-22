@@ -1,12 +1,12 @@
 import Hero from "../components/Hero/Hero";
 import DestinationsHeroImg from '../assets/image2.jpg'
-import '../components/Hero/destinationsHero.css'
+import '../components/Hero/DestinationsHero.css'
 import Footer from "../components/Footer/Footer";
 import DestinationList from "../components/DestinationComponents/DestinationGrid/DestinationList";
+import DestinationsBottom from "../components/DestinationComponents/DestinationsBottom/DestinationsBottom";
 
 function Destinations() {
   const heroHeading = 'SAVE 60% BY BOOKING WITH US'
-
   const primaryBtnTitle = 'Start Saving'
   return (
     <>
@@ -21,6 +21,7 @@ function Destinations() {
       />
 
       <DestinationList />
+      <DestinationsBottom />
       <Footer />
     </>
   )

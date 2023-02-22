@@ -1,10 +1,9 @@
-import './homeHero.css'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 function Hero(props) {
   return (
-    <>
+    <div className={props.container}>
       <div className={props.className}>
         <img className='hero' alt="hero" src={props.heroImage} />
       </div>
@@ -29,7 +28,7 @@ function Hero(props) {
       </div>
 
 
-    </>
+    </div>
   );
 }
 

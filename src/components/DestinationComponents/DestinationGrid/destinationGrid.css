@@ -13,10 +13,9 @@
   font-size: 1.9rem;
   text-align: center;
   display: inline;
-  color: rgb(41, 41, 41);
+  color: #457b9d;
   text-transform: uppercase;
   margin-top: 2rem;
-  border-bottom: 2px solid #e63946;
 }
 
 .destination-container img{
@@ -38,6 +37,7 @@
   border-bottom: solid #e63946 2px;
   padding: 0 1rem;
   font-size: 3rem;
+  white-space: nowrap;
 }
 
 
@@ -62,9 +62,11 @@
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 800px){
   .destination-container{
     grid-template-columns: 1fr;
+    margin-bottom: 4rem;
+    padding-bottom: 0;
   }
 
   .destination-inner-container{

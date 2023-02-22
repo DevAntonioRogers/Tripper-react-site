@@ -1,12 +1,8 @@
 import './destinationGrid.css'
 
-
-
-
 function Destination({ destination }) {
 
   const { name, image, className } = destination
-
 
   return (
     <>

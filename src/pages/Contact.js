@@ -1,7 +1,12 @@
-import React from "react";
+import Hero from "../components/Hero/Hero";
+import '../components/Hero/ContactHero.css'
 
 function Contact() {
-  return <div>Contact</div>;
+  return (
+    <Hero
+      container='contact-hero-container'
+    />
+  )
 }
 
 export default Contact;

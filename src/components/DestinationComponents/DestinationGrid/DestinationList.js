@@ -8,7 +8,7 @@ const DestinationList = () => {
 
   return (
     <>
-      <div className="our-destinations-text">
+      <div id="destinations" className="our-destinations-text">
         <h1>Our Destinations</h1>
       </div>
 

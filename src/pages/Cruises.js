@@ -1,10 +1,13 @@
-
+import cruiseHero from '../../src/assets/cruisehero.jpg'
+import Hero from '../components/Hero/Hero';
 
 function Cruises() {
 
   return (
     <>
-      <h1>hello</h1>
+      <Hero
+        heroImage={cruiseHero}
+      />
     </>
   );
 }
