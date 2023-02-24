@@ -26,8 +26,6 @@ function Hero(props) {
           </motion.button>
         </div>
       </div>
-
-
     </div>
   );
 }

@@ -1,4 +1,56 @@
 .contact-hero-container{
   background-color: blue;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-hero-inner{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-hero-socials, 
+.contact-hero-map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 75%;
+  height: 250px;
+  margin: 0 auto;
+  
+}
+
+.contact-hero-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 520px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.flex-test{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
+@media only screen and (max-width: 800px){
+  .contact-hero-inner{
+   display: flex;
+   flex-direction: column;
+  }
+
+  .contact-hero-form{
+    height: 300px;
+  }
 }
