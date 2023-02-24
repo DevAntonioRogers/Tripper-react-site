@@ -1,56 +1,91 @@
 .contact-hero-container{
-  background-color: blue;
-  height: 100vh;
+  padding: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .contact-hero-inner{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 3rem;
+  grid-template-areas: 
+  "social form form form"
+  "map form form form";
 }
 
-.contact-hero-socials, 
-.contact-hero-map{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.social{
+  grid-area: social;
   background-color: white;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
   border-radius: 20px;
-  width: 75%;
-  height: 250px;
-  margin: 0 auto;
+
+}
+
+.social h3{
+  font-size: 2rem;
+  text-transform: uppercase;
+  height: 100%;
+  transform: translateY(-100%);
+  color: #e63946;
+}
+
+.contact-social-box{
+  display: flex;
+  gap: 2rem;
+  transform: translateY(100%);
+}
+
+.contact-social-box i{
+  font-size: 2rem;
+  background-color: #e63946;
+  color: white;
+  border-radius: 50px;
+  padding: 0.5rem;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.contact-social-box i:hover{
+  transform: translateY(-5px);
   
 }
 
-.contact-hero-form{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 520px;
+.contact-social-info i{
+  color: #1d3557;
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.contact-social-info{
+  margin-top: 1rem;
+  color: #1d3557;
+}
+.map{
+  grid-area: map;
   background-color: white;
-  border-radius: 20px;
+  padding: 4rem;
 }
 
-.flex-test{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
+.form{
+  grid-area: form;
+  background-color: white;
+  padding: 4rem;
+}
+
+
+.social span {
+  font-size: 1.5rem;
 }
 
 
 
-@media only screen and (max-width: 800px){
-  .contact-hero-inner{
-   display: flex;
-   flex-direction: column;
-  }
-
-  .contact-hero-form{
-    height: 300px;
-  }
-}
