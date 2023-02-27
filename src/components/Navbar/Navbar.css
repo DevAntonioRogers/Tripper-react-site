@@ -109,6 +109,10 @@
     gap: 3rem;
   }
 
+  .form-text-area{
+    grid-column: span 2;
+  }
+
 
 }
 

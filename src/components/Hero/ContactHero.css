@@ -11,11 +11,12 @@
 
 .contact-hero-container::after{
   content: "";
-  background-image: url(../../../src/assets/contactpagehero.jpg);
+  background-image: url(../../../src/assets/contacthero2.jpg);
   background-size: cover;
+  background-color: #457b9d;
   position: absolute;
   inset: 0;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .contact-hero-inner{
@@ -31,9 +32,10 @@
 
 .social{
   grid-area: social;
-  background-color: white;
+  background-color: #e63946;
   padding: 2rem 4rem;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .social-box{
@@ -48,7 +50,7 @@
 .social h3{
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #e63946;
+  color: white;
   width: 100%;
   display: inline-block;
   margin-bottom: 2rem;
@@ -64,19 +66,20 @@
 .contact-social-info span{
   font-size: 1.5rem;
   text-transform: uppercase;
+  color: white;
 }
 
 .contact-social-info i{
-  background-color: #e63946;
+  background-color: #457b9d;
   padding: 1rem;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   border-radius: 50px;
   margin-right: 0.5rem;
 }
 
 .contact-social-box i{
-  font-size: 2rem;
+  font-size: 3rem;
   background-color: #e63946;
   color: white;
   border-radius: 50px;
@@ -91,25 +94,26 @@
   
 }
 
-
-
 .contact-social-info{
   margin-bottom: 1rem;
 }
 .map{
   grid-area: map;
-  background-color: white;
-  padding: 4rem;
+  background-color: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .form{
   grid-area: form;
   background-color: white;
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .form label{
@@ -121,7 +125,9 @@
 .form form{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  place-items: center;
   grid-gap: 2rem;
+  height: 90%;
 }
 
 .form input{
@@ -142,6 +148,7 @@
   padding: 0.5rem 0;
   color: white;
   border-radius: 20px;
+  margin-top: 2rem;
 }
 
 .form-hours{
@@ -172,6 +179,38 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  
+  .contact-hero-container{
+    height: 1150px;
+  }
+  
+  .contact-hero-inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map{
+    order: 3
+  }
+
+  .social{
+    order: 2;
+  }
+
+  .form-hours > * {
+    display: none;
+  }
+
+  .form-hours div{
+    display: none;
+  }
+
+  .form button{
+   grid-column: span 2;
+  }
 }
 
 

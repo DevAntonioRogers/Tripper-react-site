@@ -1,15 +1,15 @@
 import '../components/Hero/ContactHero.css'
+import Footer from '../components/Footer/Footer'
+import Map from '../components/Map/Map';
 
 function Contact() {
   return (
     <>
-
       <div className='contact-hero-container'>
-
         <div className='contact-hero-inner'>
           <div className='social'>
             <div className='social-box'>
-              <h3>Contact Us or Send us a message </h3>
+              <h3>Contact Us or Send us a message</h3>
               <div className='contact-social-info'>
                 <i class="fa-solid fa-phone"></i>
                 <span>1800-435-2343</span>
@@ -26,18 +26,14 @@ function Contact() {
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-snapchat"></i>
+                <i class="fa-brands fa-linkedin"></i>
               </div>
             </div>
           </div>
-
           <div className='map'>
-            <h1>MAP</h1>
+            <Map />
           </div>
-
-
           <div className='form'>
-
             <form>
               <div>
                 <label for="firstname">First Name</label>
@@ -58,11 +54,11 @@ function Contact() {
                 <input type="tel" id="phone" name="phone" placeholder='Enter a phone number' required />
               </div>
 
-              <div>
+              <div className='form-text-area'>
                 <label for="comment">Comment:</label>
                 <textarea id="comment" name="comment" rows="7"></textarea>
+                <button>Submit</button>
               </div>
-
               <div className='form-hours'>
                 <h3>HOURS OF OPERATION</h3>
                 <div>
@@ -75,11 +71,12 @@ function Contact() {
                 </div>
               </div>
 
-              <button>Submit</button>
             </form>
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   )
 }
