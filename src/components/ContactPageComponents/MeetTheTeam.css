@@ -1,0 +1,45 @@
+.mtt-container{
+  padding: 5rem;
+  text-align: center;
+}
+
+.mtt-container h1{
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: #e63946;
+}
+
+
+.mtt-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.team-box {
+  text-align: center;
+}
+
+.team-box img{
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  max-width: 250px;
+}
+
+.team-box h2{
+  font-size: 2rem;
+  color: #e63946;
+}
+
+.team-box h3{
+  color: #1d3557;
+}
+
+@media only screen and (max-width: 800px){
+  .mtt-flex{
+    gap: 3rem
+  }
+}
