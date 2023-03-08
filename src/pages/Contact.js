@@ -2,6 +2,7 @@ import '../components/Hero/ContactHero.css'
 import Footer from '../components/Footer/Footer'
 import Map from '../components/Map/Map';
 import MeetTheTeam from '../components/ContactPageComponents/MeetTheTeam';
+import Aboutus from '../components/ContactPageComponents/Aboutus';
 
 function Contact() {
   return (
@@ -76,7 +77,9 @@ function Contact() {
           </div>
         </div>
       </div>
+
       <MeetTheTeam />
+      <Aboutus />
       <Footer />
     </>
   )

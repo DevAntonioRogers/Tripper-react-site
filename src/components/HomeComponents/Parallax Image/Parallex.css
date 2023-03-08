@@ -1,15 +1,15 @@
  .parallax-container {
   width: 100%;
   height:75vh;
-  background: url("/Users/ceoantonio/Desktop/Projects/tripper/src/assets/parallex.jpeg");
+  background: url("../../../../src/assets/parallex.jpeg");
   background-size: cover;
   position: relative;
 }
 
 .parallax-mask{
-    mask:url("/Users/ceoantonio/Desktop/Projects/tripper/src/assets/parallex-mask.png");
+    mask:url("../../../../src/assets/parallex-mask.png");
     mask-size: cover;
-    -webkit-mask:url("/Users/ceoantonio/Desktop/Projects/tripper/src/assets/parallex-mask.png");
+    -webkit-mask:url("../../../../src/assets/parallex-mask.png");
     -webkit-mask-size:cover;
     width:100%;
     height:100%;
