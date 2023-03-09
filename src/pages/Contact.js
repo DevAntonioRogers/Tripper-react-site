@@ -11,6 +11,7 @@ function Contact() {
         <div className='contact-hero-inner'>
           <div className='social'>
             <div className='social-box'>
+
               <h3>Contact Us or Send us a message</h3>
               <div className='contact-social-info'>
                 <i class="fa-solid fa-phone"></i>
@@ -24,6 +25,7 @@ function Contact() {
                 <i class="fa-solid fa-house"></i>
                 <span>1343 AntonioRogers Rd</span>
               </div>
+
               <div className='contact-social-box'>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
@@ -36,17 +38,16 @@ function Contact() {
             <Map />
           </div>
           <div className='form'>
+            <h1>Send us a message</h1>
             <form>
               <div>
                 <label for="firstname">First Name</label>
                 <input type="text" name="firstname" placeholder='Enter your first name' required />
               </div>
-
               <div>
                 <label for="lastname">Last Name:</label>
                 <input type="text" id="lastname" name="lastname" placeholder='Enter your last name' required />
               </div>
-
               <div>
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" placeholder='Enter your email address' required />
@@ -55,7 +56,6 @@ function Contact() {
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" placeholder='Enter a phone number' required />
               </div>
-
               <div className='form-text-area'>
                 <label for="comment">Comment:</label>
                 <textarea id="comment" name="comment" rows="7"></textarea>
@@ -72,12 +72,11 @@ function Contact() {
                   <p>SAT & SUN: 5AM - 3PM</p>
                 </div>
               </div>
-
+              <h2>PLEASE ALLOW 48 HOURS FOR A RESPONSE</h2>
             </form>
           </div>
         </div>
       </div>
-
       <MeetTheTeam />
       <Aboutus />
       <Footer />

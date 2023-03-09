@@ -36,14 +36,16 @@
   padding: 2rem 4rem;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-height: 280px;
 }
 
 .social-box{
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   grid-template-rows: 5fr;
   width: 100%;
-  align-items: center;
+  
   
 }
 
@@ -59,8 +61,8 @@
 
 .contact-social-box{
   display: flex;
-  gap: 2rem;
-  place-self: center;
+  gap: 4rem;
+  justify-content: center;
 }
 
 .contact-social-info span{
@@ -70,7 +72,6 @@
 }
 
 .contact-social-info i{
-  background-color: #457b9d;
   padding: 1rem;
   color: white;
   font-size: 1.5rem;
@@ -79,30 +80,30 @@
 }
 
 .contact-social-box i{
-  font-size: 3rem;
-  background-color: #e63946;
+  font-size: 2rem;
   color: white;
   border-radius: 50px;
-  padding: 1rem;
   transition: 0.4s;
   cursor: pointer;
-  transform: translateY(30%);
-}
+  background-color: #457b9d;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0.9rem;
+  margin-top: 1.5rem;
 
-.contact-social-box i:hover{
-  transform: translateY(-3px);
-  
 }
 
 .contact-social-info{
   margin-bottom: 1rem;
 }
+
 .map{
   grid-area: map;
   background-color: transparent;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+  
 }
 
 .form{
@@ -110,10 +111,25 @@
   background-color: white;
   padding: 2rem;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-height: 600px;
+}
+
+
+.form h2{
+  grid-column: span 2;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #e63946;
+  width: 100%;
+  text-align: center;
+  
+}
+.form h1{
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  color: #e63946;
+
 }
 
 .form label{
@@ -127,7 +143,7 @@
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   grid-gap: 2rem;
-  height: 90%;
+  justify-self: flex-start;
 }
 
 .form input{
@@ -184,7 +200,7 @@
 @media only screen and (max-width: 800px) {
   
   .contact-hero-container{
-    height: 1150px;
+    height: 100%;
   }
   
   .contact-hero-inner{

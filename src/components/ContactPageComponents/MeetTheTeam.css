@@ -26,7 +26,10 @@
 .team-box img{
   border-radius: 50%;
   margin-bottom: 1rem;
-  max-width: 250px;
+  max-width: 180px;
+  max-width: 180px;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .team-box h2{
