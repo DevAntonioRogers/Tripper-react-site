@@ -81,3 +81,17 @@
     transform: translateX(0);
   }
 } */
+
+@media only screen and (max-width: 800px) {
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .about-text-container{
+    margin-left: 0;
+    margin-top: -10rem;
+    width: 80%;
+  }
+}

@@ -6,7 +6,11 @@
 .mtt-container h1{
   font-size: 2.2rem;
   text-transform: uppercase;
-  color: #e63946;
+  color: #f1faee;
+  background-color: #e63946;
+  display: inline;
+  padding: 0.5rem 1rem;
+  border-radius: 20px 5px;
 }
 
 
@@ -16,7 +20,7 @@
   justify-content: center;
   gap: 7rem;
   flex-wrap: wrap;
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .team-box {

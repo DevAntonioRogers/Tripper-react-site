@@ -1,4 +1,4 @@
-import AboutImg from '../../../src/assets/Aboutus.jpg'
+import officeImg from '../../../src/assets/office.png'
 import './AboutUs.css'
 
 const Aboutus = () => {
@@ -6,7 +6,7 @@ const Aboutus = () => {
     <>
       <div className='about-container'>
         <div className='about-img'>
-          <img src={AboutImg} alt='About' />
+          <img src={officeImg} alt='About' />
         </div>
 
         <div className='about-text-container'>
