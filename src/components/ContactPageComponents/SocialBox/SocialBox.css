@@ -1,0 +1,54 @@
+.social-box{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-template-rows: 5fr;
+  width: 100%;
+}
+
+.social-box h3{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: 2rem;
+  white-space: nowrap;
+}
+
+.contact-social-box{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.contact-social-info span{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.contact-social-info i{
+  padding: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  margin-right: 0.5rem;
+}
+
+.contact-social-box i{
+  font-size: 2rem;
+  color: white;
+  border-radius: 50px;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #457b9d;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 0.9rem;
+  margin-top: 1.5rem;
+
+}
+
+.contact-social-info{
+  margin-bottom: 1rem;
+}

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import LoginModal from "../Modals/LoginModal";
+import LoginModal from '../../components/Modals/LoginModal'
 import { useState } from 'react'
 import './LoginBtn.css'
 

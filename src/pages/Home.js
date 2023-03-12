@@ -3,7 +3,7 @@ import FeaturedList from "../components/HomeComponents/FeaturedDestinations/Feat
 import Parallex from "../components/HomeComponents/Parallax Image/Parallex";
 import AppSection from "../components/HomeComponents/AppSection/AppSection";
 import Footer from "../components/Footer/Footer";
-import HomeHero from "../Layout/HomeHero";
+import HomeHero from "../Layout/HomeHero/HomeHero";
 
 
 function Home() {

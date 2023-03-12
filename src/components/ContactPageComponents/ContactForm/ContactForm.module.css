@@ -1,0 +1,103 @@
+.form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 2rem;
+  justify-self: flex-start;
+}
+
+
+.form h2{
+  grid-column: span 2;
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #e63946;
+  width: 100%;
+  text-align: center;
+  
+}
+.form h1{
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  color: #e63946;
+}
+
+
+.form label{
+  font-size: 1.2rem;
+  color: #e63946;
+  margin-bottom: 0.5rem;
+}
+
+.form form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 2rem;
+  justify-self: flex-start;
+}
+
+.form input{
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.form textarea{
+  width: 100%;
+  resize: none;
+  margin-bottom: 0;
+}
+
+.form button{
+  background-color: #e63946;
+  border: none;
+  padding: 0.5rem 0;
+  color: white;
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+.form_hours{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: span 2;
+}
+
+.form_hours div{
+  text-align: center;
+}
+
+.form_hours h3{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e63946;
+}
+
+.form_hours p {
+  font-size: 1.2rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.form div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+  .form_hours > * {
+    display: none;
+  }
+
+  .form_hours div{
+    display: none;
+  }
+
+  .form button{
+    grid-column: span 2;
+   }
+}

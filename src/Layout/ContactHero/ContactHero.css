@@ -1,0 +1,97 @@
+.contact-hero-container{
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #1d3557;
+}
+
+.contact-hero-container::after{
+  content: "";
+  background-image: url(../../../src/assets/contacthero2.jpg);
+  background-size: cover;
+  background-color: #457b9d;
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+}
+
+.contact-hero-inner{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 3rem;
+  grid-template-areas: 
+  "social form form form"
+  "map form form form";
+  z-index: 9;
+}
+
+.social{
+  grid-area: social;
+  background-color: #e63946;
+  padding: 2rem 4rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-height: 280px;
+}
+
+
+.map{
+  grid-area: map;
+  background-color: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form{
+  grid-area: form;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  max-height: 615px;
+}
+
+
+.form h1{
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  color: var(--primary-color);
+}
+
+
+@media only screen and (max-width: 800px) {
+  
+  .contact-hero-container{
+    height: 100%;
+  }
+  
+  .contact-hero-inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .map{
+    order: 3
+  }
+
+  .social{
+    order: 2;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+

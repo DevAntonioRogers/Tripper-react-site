@@ -4,15 +4,13 @@ import { NavbarMenuItems } from './NavbarMenuItems'
 import { useEffect, useState } from 'react';
 import './Navbar.css'
 
-// BUTTON COMPONENTS
-import LoginBtn from "../Buttons/LoginBtn";
-import SignUpBtn from "../Buttons/SignUpBtn";
+import LoginBtn from '../../UI/Buttons/LoginBtn'
+import SignUpBtn from "../../UI/Buttons/SignUpBtn";
 
 
 
 function Navbar() {
 
-  // MOBILE MENU STATE
   const [click, setClick] = useState(false)
 
   const handleClick = () => {

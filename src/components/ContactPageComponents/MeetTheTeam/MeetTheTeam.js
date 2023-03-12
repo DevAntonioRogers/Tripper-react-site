@@ -1,13 +1,13 @@
 import './MeetTheTeam.css'
-import Member1 from '../../assets/TeamImages/team1.jpg'
-import Member2 from '../../assets/TeamImages/team2.jpeg'
-import Member3 from '../../assets/TeamImages/team3.jpeg'
-import Member4 from '../../assets/TeamImages/team4.jpeg'
-import Member5 from '../../assets/TeamImages/team5.jpeg'
-import Member6 from '../../assets/TeamImages/team6.jpeg'
-import Member7 from '../../assets/TeamImages/team7.jpeg'
-import Member8 from '../../assets/TeamImages/team8.jpeg'
-import Member9 from '../../assets/TeamImages/team9.jpeg'
+import Member2 from '../../../assets/TeamImages/team2.jpeg'
+import Member3 from '../../../assets/TeamImages/team3.jpeg'
+import Member1 from '../../../assets/TeamImages/team1.jpg'
+import Member4 from '../../../assets/TeamImages/team4.jpeg'
+import Member5 from '../../../assets/TeamImages/team5.jpeg'
+import Member6 from '../../../assets/TeamImages/team6.jpeg'
+import Member7 from '../../../assets/TeamImages/team7.jpeg'
+import Member8 from '../../../assets/TeamImages/team8.jpeg'
+import Member9 from '../../../assets/TeamImages/team9.jpeg'
 
 
 

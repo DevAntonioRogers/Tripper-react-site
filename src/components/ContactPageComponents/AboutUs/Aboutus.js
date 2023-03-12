@@ -1,4 +1,4 @@
-import officeImg from '../../../src/assets/office.png'
+import officeImg from '../../../../src/assets/office.png'
 import './AboutUs.css'
 
 const Aboutus = () => {

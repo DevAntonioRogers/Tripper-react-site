@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 1.5rem 1rem;
-  background-color: #f1faee;
+  background-color: var(--primary-light);
   top: 0;
   left: 0;
   right: 0;
@@ -34,13 +34,13 @@
 }
 
 .nav-link.active{
-  color: #e63946;
+  color: var(--primary-color);
 }
 
 .nav-link{
   margin-left: 3rem;
   font-size: 1.5rem;
-  color: #1d3557;
+  color: var(--primary-dark);
 }
 
 .nav-menu i {
@@ -67,7 +67,7 @@
     top: 5.7rem;
     flex-direction: column;
     width: 100%;
-    background-color: #f1faee;
+    background-color: var(--primary-light);
     height: 100vh;
     right: 100%;
     transition: all 0.3s ease-in-out;

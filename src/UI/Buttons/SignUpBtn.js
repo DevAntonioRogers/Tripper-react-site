@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from 'react'
-import SignupModal from "../Modals/SignupModal";
+import SignupModal from "../../components/Modals/SignupModal";
 import './SignUpBtn.css'
 
 const SignUpBtn = () => {
