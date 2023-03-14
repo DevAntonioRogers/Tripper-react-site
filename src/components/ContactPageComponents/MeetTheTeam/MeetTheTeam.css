@@ -8,9 +8,10 @@
   text-transform: uppercase;
   color: #f1faee;
   background-color: #e63946;
-  display: inline;
+  display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 20px 5px;
+  z-index: -999;
 }
 
 

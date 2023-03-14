@@ -9,13 +9,40 @@ import Member7 from '../../../assets/TeamImages/team7.jpeg'
 import Member8 from '../../../assets/TeamImages/team8.jpeg'
 import Member9 from '../../../assets/TeamImages/team9.jpeg'
 
+import { useRef, useEffect } from 'react'
+import { useInView, useAnimation, motion } from 'framer-motion';
+
+import { mttAnimations } from '../../../shared/Animations'
+
 
 
 const MeetTheTeam = () => {
+
+
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+  const mttControls = useAnimation()
+  const mttTitleControls = useAnimation()
+
+
+
+  useEffect(() => {
+    if (isInView) {
+      mttControls.start('enter')
+      mttTitleControls.start('titleEnter')
+
+
+    }
+    if (!isInView) {
+      mttControls.start('exit')
+      mttTitleControls.start('titleExit')
+    }
+  })
+
   return (
-    <div className='mtt-container'>
-      <h1>Meet The Team</h1>
-      <div className='mtt-flex'>
+    <div ref={ref} className='mtt-container'>
+      <motion.h1 animate={mttTitleControls} variants={mttAnimations}>Meet The Team</motion.h1>
+      <motion.div animate={mttControls} variants={mttAnimations} className='mtt-flex'>
         <div className='team-box'>
           <img src={Member4} alt='CEO' />
           <h2>Julian Folder</h2>
@@ -61,7 +88,7 @@ const MeetTheTeam = () => {
           <h2>Michael Aiden</h2>
           <h3>Team Lead</h3>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
