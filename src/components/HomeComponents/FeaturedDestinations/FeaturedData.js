@@ -9,12 +9,20 @@ export const FeaturedData = [
     image: RoyalBahamian,
     location: 'Nassau, Bahamas',
     details:
-      "Easy going isn't just how we are, it's who we are. And it's the spirit that imbues every corner of the re-imagined Sandals Royal Bahamian, the most elegant all-inclusive resort",
+      "Easy going isn't just how we are, it's who we are. And it's the spirit that imbues every corner of the re-imagined Sandals Royal Bahamian, the most elegant all-inclusive resort ",
     stayAmount: '4 nights for ',
     price: '$1765',
     tag1: 'Adults Only',
     tag2: 'All Inclusive',
-    tag3: 'Hotel Included'
+    tag3: 'Hotel Included',
+    rating: 3,
+
+    pool: true,
+    arcade: false,
+    spa: true,
+    roomService: true,
+    smokingRooms: false
+
   },
 
   {
@@ -29,7 +37,8 @@ export const FeaturedData = [
     price: '$1890',
     tag1: 'Family',
     tag2: 'All Inclusive',
-    tag3: 'Room Service'
+    tag3: 'Room Service',
+    rating: 5
   },
 
   {
@@ -44,7 +53,8 @@ export const FeaturedData = [
     price: '$1097',
     tag1: 'Adults Only',
     tag2: 'All Inclusive',
-    tag3: 'Hotel Included'
+    tag3: 'Hotel Included',
+    rating: 2
   },
 
   {
@@ -59,7 +69,8 @@ export const FeaturedData = [
     price: '$1868',
     tag1: 'Adults Only',
     tag2: 'All Inclusive',
-    tag3: 'Hotel Included'
+    tag3: 'Hotel Included',
+    rating: 5
   }
 ]
 

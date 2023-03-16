@@ -1,0 +1,99 @@
+.card_image{
+  width: 100%;
+  height: 200px;
+ 
+  object-fit: cover;
+  position: relative;
+
+
+
+}
+
+.image_box{
+  position: relative;
+}
+
+.image_box:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(/src/assets/waves.svg);
+  background-size: cover;
+}
+
+
+
+.card_title{
+  margin-top: -2rem;
+  z-index: 3;
+  color: var(--primary-color);
+  text-align: center;
+  border-bottom: 1px solid rgb(189, 189, 189);
+  width: 80%;
+}
+
+.card_title h1 {
+  white-space: nowrap;
+}
+
+.card_title span{
+  color: black;
+  margin-top: 2rem
+}
+
+.card_title div{
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.card_details{
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.45rem;
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  min-height: 130px;
+  max-height: 130px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.card_price {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+.card_price div{
+  margin-top: 0.2rem;
+  margin-right: 0.1rem;
+}
+
+.card_price span {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card_tags{
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+
+}
+
+.card_tags div {
+  display: flex;
+  gap: 3rem;
+  
+}
+
