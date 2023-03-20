@@ -11,6 +11,7 @@ function Cruises() {
       <Hero
         heroImage={cruiseHero}
       />
+
       <CruiseCards />
 
     </>

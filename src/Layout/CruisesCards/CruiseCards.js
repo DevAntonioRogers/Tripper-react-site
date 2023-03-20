@@ -1,4 +1,4 @@
-import { FeaturedData } from "../../components/HomeComponents/FeaturedDestinations/FeaturedData"
+import { FeaturedData } from '../../components/HomeComponents/FeaturedDestinations/FeaturedData'
 import Card from "../../UI/Card/Card";
 import CardItem from "../../UI/Card/CardItem";
 import classes from './CruisesCards.module.css'
@@ -8,7 +8,10 @@ import { MdFastfood, MdSmokingRooms } from 'react-icons/md'
 
 
 
-const CruiseCards = () => {
+const CruiseCards = (props) => {
+
+
+
   const cruises =
     FeaturedData.map((cruise) =>
       <Card>
@@ -67,6 +70,10 @@ const CruiseCards = () => {
 
         />
       </Card >)
+
+
+
+
 
 
   return (
