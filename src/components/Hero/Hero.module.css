@@ -1,4 +1,6 @@
 .hero__container{
   height: 100vh;
   overflow: hidden;
+  background-color: aqua;
 }
+

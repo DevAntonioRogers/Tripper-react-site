@@ -10,7 +10,7 @@ const CardItem = (props) => {
       </div>
       <div className={classes.card_title}>
         <h1>{props.name}</h1>
-        <span>{props.location}</span>
+        <span>{props.depart}{props.location}</span>
         <div>{props.rating}</div>
       </div>
 
