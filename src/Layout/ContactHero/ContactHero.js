@@ -3,20 +3,45 @@ import Map from '../../components/Map/Map';
 import SocialBox from '../../components/ContactPageComponents/SocialBox/SocialBox';
 import ContactForm from '../../components/ContactPageComponents/ContactForm/ContactForm';
 
+import { useRef, useEffect } from 'react'
+import { useInView, useAnimation, motion } from 'framer-motion';
+
+import { contactFormAnimations } from '../../shared/Animations';
+import { contactBoxesAnimations } from '../../shared/Animations';
+
+
 const ContactHero = () => {
+
+
+
+  const ref = useRef(null)
+  const isInView = useInView(ref)
+  const formAnimationControls = useAnimation()
+  const boxesAnimationControls = useAnimation()
+
+  useEffect(() => {
+    if (isInView) {
+      formAnimationControls.start('enter')
+      boxesAnimationControls.start('enter')
+    }
+    if (!isInView) {
+      formAnimationControls.start('exit')
+      boxesAnimationControls.start('exit')
+    }
+  })
   return (
-    <div className='contact-hero-container'>
+    <div ref={ref} className='contact-hero-container'>
       <div className='contact-hero-inner'>
-        <div className='social'>
+        <motion.div animate={boxesAnimationControls} variants={contactBoxesAnimations} className='social'>
           <SocialBox />
-        </div>
-        <div className='map'>
+        </motion.div>
+        <motion.div animate={boxesAnimationControls} variants={contactBoxesAnimations} className='map'>
           <Map />
-        </div>
-        <div className='form'>
+        </motion.div>
+        <motion.div animate={formAnimationControls} variants={contactFormAnimations} className='form'>
           <h1>Send us a message</h1>
           <ContactForm />
-        </div>
+        </motion.div>
       </div>
     </div>
   )

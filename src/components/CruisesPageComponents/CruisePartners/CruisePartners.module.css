@@ -1,5 +1,31 @@
 .partners{
-  height: 200px;
   width: 100%;
-  background-color: aqua;
+  padding: 3rem;
 }
+
+.partners img{
+  width: 200px;
+ 
+  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg) brightness(101%) contrast(101%); */
+}
+
+.partners h1{
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--primary-dark);
+  text-shadow: var(--textshadow-heavy);
+  padding-bottom: 0.2rem;
+  border-bottom: 2px solid rgb(227, 225, 225);
+  width: 35%;
+  margin: auto
+}
+
+.cruise_logos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+

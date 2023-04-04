@@ -21,6 +21,8 @@ import Contact from './pages/Contact';
 
 
 
+
+
 // React Router Func
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<Navbar />}>

@@ -14,6 +14,7 @@ const CruiseCards = (props) => {
 
   const cruises =
     CruiseCardData.map((cruise) =>
+
       <Card>
         <CardItem name={cruise.name} image={cruise.image} depart={'Depart: '} location={cruise.depart} stayAmount={cruise.stayAmount} price={cruise.price} details={cruise.details} rating={[...Array(5)].map((star, index) => {
           const ratingValue = index + 1
@@ -69,7 +70,8 @@ const CruiseCards = (props) => {
 
 
         />
-      </Card >)
+      </Card >
+    )
 
 
 

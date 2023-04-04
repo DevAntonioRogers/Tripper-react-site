@@ -1,5 +1,119 @@
-.hero{
+/* FIRST SLIDE */
+
+.slider img {
   width: 100%;
-  height: 50vh;
-  background-color: aqua;
+  height: 75vh;
+  object-fit: cover;
+}
+
+.firstSlide{
+  position: relative;
+}
+
+.firstSlide_info_contianer{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  
+}
+
+.firstSlide_info_contianer div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstSlide_info_contianer div:nth-child(2){
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.firstSlide_info_contianer h1{
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #e63946; 
+  text-shadow: var(--textshadow-heavy);
+  background-color: rgba(255, 255, 255, 0.509);
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.firstSlide_info_contianer span {
+  font-size: 1.2rem;
+}
+
+.firstSlide_info_contianer button:nth-child(1){
+  background-color: #e63946;
+  padding: var(--button-padding);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.firstSlide_info_contianer button:nth-child(2){
+  background-color: #e63946;
+  padding: var(--button-padding);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
+
+/* Second Slide */
+
+.secondSlide{
+  position: relative;
+}
+
+.secondSlide_info_contianer{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+
+.secondSlide_info_contianer div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+}
+.secondSlide_info_contianer h1{
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--primary-color); 
+  text-shadow: var(--textshadow-heavy);
+  background-color: rgba(255, 255, 255, 0.509);
+  text-align: center;
+  margin: auto;
+  white-space: nowrap;
+  padding: 0.5rem 2.8rem;
+  border-radius: 1rem 5rem;
+  margin-bottom: 0.5rem;
+}
+
+.secondSlide_info_contianer span{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.secondSlide_info_contianer button {
+  background-color: #e63946;
+  padding: var(--button-padding);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
 }

@@ -12,3 +12,14 @@ export const mttAnimations = {
   enter: { opacity: 1, transition: { duration: 1, ease: [0.5, 0.71, 1, 1.5], delay: 0.3 } },
   exit: { opacity: 0 }
 }
+
+export const contactFormAnimations = {
+  enter: { x: 0, transition: { type: 'spring', duration: 1, bounce: 0.1, delay: 0.3 } },
+  exit: { x: '1000%' }
+}
+
+export const contactBoxesAnimations = {
+  enter: { x: 0, transition: { type: 'spring', duration: 1, bounce: 0.1, delay: 0.3 } },
+  exit: { x: '-1000%' }
+}
+
