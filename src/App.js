@@ -15,7 +15,7 @@ import Navbar from './components/Navbar/Navbar'
 
 import Home from './pages/Home';
 import Destinations from './pages/Destinations';
-import About from './pages/About';
+import Vacations from './pages/Vacations';
 import Cruises from './pages/Cruises';
 import Contact from './pages/Contact';
 
@@ -29,7 +29,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route index element={<Home />} />
     <Route path='destinations' element={<Destinations />} />
     <Route path='cruises' element={<Cruises />} />
-    <Route path='about' element={<About />} />
+    <Route path='vacations' element={<Vacations />} />
     <Route path='contact' element={<Contact />} />
   </Route>
 ))

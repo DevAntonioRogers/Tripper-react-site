@@ -21,10 +21,10 @@ export const NavbarMenuItems = [
   },
 
   {
-    title: 'About',
+    title: 'Vacations',
     className: 'nav-link',
-    url: 'about',
-    icon: "fa-solid fa-circle-info"
+    url: 'vacations',
+    icon: "fa-solid fa-sun"
   },
 
 

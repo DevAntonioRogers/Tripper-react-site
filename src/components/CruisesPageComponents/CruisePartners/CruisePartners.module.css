@@ -4,7 +4,7 @@
 }
 
 .partners img{
-  width: 200px;
+  width: 190px;
  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg) brightness(101%) contrast(101%); */
 }
 
@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 7rem;
   flex-wrap: wrap;
 }
 
