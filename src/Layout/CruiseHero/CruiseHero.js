@@ -44,9 +44,7 @@ const CruiseHero = () => {
           </div>
         </div>
       </div>
-      <div>
-        3
-      </div>
+
     </Slider>
 
   );

@@ -5,8 +5,7 @@
 
 .partners img{
   width: 200px;
- 
-  /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg) brightness(101%) contrast(101%); */
+ /* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(252deg) brightness(101%) contrast(101%); */
 }
 
 .partners h1{
@@ -29,3 +28,10 @@
   flex-wrap: wrap;
 }
 
+
+@media only screen and (max-width: 800px){
+  .partners h1{
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+}

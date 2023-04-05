@@ -5,6 +5,7 @@ import Bahamas from '../../assets/cruise/Bahamas.jpeg'
 import Holland from '../../assets/cruise/holland.jpeg'
 import Celebrity from '../../assets/cruise/celebrity.jpeg'
 import Alaska from '../../assets/cruise/alaska.jpeg'
+import Princess from '../../assets/cruise/princess-3.jpg'
 
 export const CruiseCardData = [
   {
@@ -46,7 +47,7 @@ export const CruiseCardData = [
     image: Amsterdam,
     depart: 'Fort Lauderdale, Florida',
     details:
-      'Nieuw Amsterdam, one of Holland America Lines newest and most luxurious ships, offers guests an unforgettable journey through the stunning destinations of the Eastern Caribbean. With its elegant design, exceptional amenities, and exceptional service, Nieuw Amsterdam is the perfect choice for travelers looking for a luxurious and relaxing vacation experience in the Caribbean.',
+      'Nieuw Amsterdam, one of Holland America Lines newest and most luxurious ships, offers guests an unforgettable journey through the stunning destinations of the Eastern Caribbean. With its elegant design, exceptional amenities, and exceptional service.',
     stayAmount: '7 days for ',
     price: '$2089',
     rating: 4,
@@ -99,7 +100,7 @@ export const CruiseCardData = [
     image: Celebrity,
     depart: 'Fort Lauderdale, Florida',
     details:
-      "Celebrity Apex, one of the newest and most innovative ships in the fleet, offers guests an unforgettable journey through the stunning destinations of the Eastern Caribbean. With its luxurious accommodations, exquisite dining options, and top-notch entertainment, Celebrity Apex promises an indulgent and sophisticated vacation experience that is sure to leave you feeling pampered and rejuvenated.",
+      "Celebrity Apex, one of the newest and most innovative ships in the fleet, offers guests an unforgettable journey through the stunning destinations of the Eastern Caribbean. With its luxurious accommodations, exquisite dining options, and top-notch entertainment.",
     stayAmount: '7 days for ',
     price: '$1933',
     rating: 3,
@@ -117,7 +118,7 @@ export const CruiseCardData = [
     image: Alaska,
     depart: 'Seattle, Washington',
     details:
-      "Norwegian Cruise Line's Norwegian Encore is a state-of-the-art ship offering guests an unforgettable journey through the breathtaking scenery and rugged wilderness of Alaska. With its expansive observation lounge, world-class dining options, and thrilling onboard activities, Norwegian Encore promises an exciting and immersive vacation experience that is perfect for adventure-seekers and nature lovers.",
+      "Norwegian Cruise Line's Norwegian Encore is a state-of-the-art ship offering guests an unforgettable journey through the breathtaking scenery and rugged wilderness of Alaska. With its expansive observation lounge, world-class dining options, and thrilling onboard activities.",
     stayAmount: '7 days for ',
     price: '$1013',
     rating: 5,
@@ -131,19 +132,19 @@ export const CruiseCardData = [
 
   {
     id: 7,
-    name: 'Norwegian Encore',
-    image: Alaska,
-    depart: 'Seattle, Washington',
+    name: 'Princess Cruise',
+    image: Princess,
+    depart: 'Miami, Florida',
     details:
       "Norwegian Cruise Line's Norwegian Encore is a state-of-the-art ship offering guests an unforgettable journey through the breathtaking scenery and rugged wilderness of Alaska. With its expansive observation lounge, world-class dining options, and thrilling onboard activities, Norwegian Encore promises an exciting and immersive vacation experience that is perfect for adventure-seekers and nature lovers.",
     stayAmount: '7 days for ',
-    price: '$1013',
+    price: '$1073',
     rating: 5,
     pool: false,
-    arcade: false,
+    arcade: true,
     spa: true,
     roomService: true,
-    smokingRooms: false
+    smokingRooms: true
 
   },
 ]
