@@ -6,8 +6,7 @@ import Footer from '../components/Footer/Footer'
 
 
 
-// Temporary
-import CruiseCards from "../Layout/CruisesCards/CruiseCards";
+
 
 
 
@@ -17,9 +16,7 @@ function Vacations() {
       <VacationsHero />
       <VacationsCards />
       <VacationType />
-      <CruiseCards firstCards={4} />
-      <CruiseCards firstCards={4} />
-      <CruiseCards firstCards={4} />
+      <VacationsCards />
       <VacationsBottom />
       <Footer />
     </>

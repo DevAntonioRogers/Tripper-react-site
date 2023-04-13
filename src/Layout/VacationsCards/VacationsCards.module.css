@@ -1,7 +1,9 @@
-.container{
-  text-align: center;
-}
-
-.container h1{
-  margin-top: 3rem;
+.card_container {
+  margin: 4rem 0;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
 }

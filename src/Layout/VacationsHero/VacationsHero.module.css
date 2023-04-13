@@ -1,5 +1,38 @@
 .hero_container{
   width: 100%;
-  height: 75vh;
-  background-color: aqua;
+  height: calc(100vh - 15px);
+  padding: 5rem;
+}
+
+.inner_container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.right h1{
+  font-size: 5rem;
+  color: var(--primary-color);
+  text-shadow: var(--textshadow-dark);
+}
+
+.right span {
+  font-size: 1.5rem;
+}
+
+.right button {
+  padding: var(--button-padding);
+  border-radius: 20px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+  box-shadow: var(--boxshadow-light);
 }
