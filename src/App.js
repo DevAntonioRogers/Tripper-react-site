@@ -18,6 +18,8 @@ import Destinations from './pages/Destinations';
 import Vacations from './pages/Vacations';
 import Cruises from './pages/Cruises';
 import Contact from './pages/Contact';
+import VacationDetails from './pages/VacationDetails';
+import CruiseDetails from './pages/CruiseDetails';
 
 
 
@@ -31,6 +33,8 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path='cruises' element={<Cruises />} />
     <Route path='vacations' element={<Vacations />} />
     <Route path='contact' element={<Contact />} />
+    <Route path='vacations/:name' element={<VacationDetails />} />
+    <Route path='cruises/:id' element={<CruiseDetails />} />
   </Route>
 ))
 
