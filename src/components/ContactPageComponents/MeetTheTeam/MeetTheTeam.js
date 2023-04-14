@@ -20,7 +20,7 @@ const MeetTheTeam = () => {
 
 
   const ref = useRef(null)
-  const isInView = useInView(ref)
+  const isInView = useInView(ref, { once: true })
   const mttControls = useAnimation()
   const mttTitleControls = useAnimation()
 
@@ -37,7 +37,7 @@ const MeetTheTeam = () => {
       mttControls.start('exit')
       mttTitleControls.start('titleExit')
     }
-  })
+  }, [isInView])
 
   return (
     <div ref={ref} className='mtt-container'>

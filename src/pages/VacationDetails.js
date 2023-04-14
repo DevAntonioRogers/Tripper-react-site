@@ -5,9 +5,6 @@ const VacationDetails = () => {
   const { name } = useParams();
   const vacation = VacationCardData.find(vacation => vacation.name.replace(/\s/g, '') === name);
 
-  if (!vacation) {
-    return <div> Vacation not found </div>;
-  }
 
   return (
     <div>

@@ -9,7 +9,7 @@ import { aboutSectionAnimations } from '../../../shared/Animations';
 const Aboutus = () => {
 
   const ref = useRef(null)
-  const isInView = useInView(ref)
+  const isInView = useInView(ref, { once: true })
   const imageControls = useAnimation()
   const aboutControls = useAnimation()
 
@@ -24,7 +24,7 @@ const Aboutus = () => {
       imageControls.start('imageExit')
       aboutControls.start('aboutExit')
     }
-  })
+  }, [isInView])
   return (
     <>
       <div ref={ref} className='about-container'>

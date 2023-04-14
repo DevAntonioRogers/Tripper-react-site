@@ -1,6 +1,6 @@
 .card_container {
   margin: 4rem 0;
-  padding: 3rem;
+  /* padding: 3rem; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;

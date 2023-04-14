@@ -15,7 +15,7 @@ const ContactHero = () => {
 
 
   const ref = useRef(null)
-  const isInView = useInView(ref)
+  const isInView = useInView(ref, { once: true })
   const formAnimationControls = useAnimation()
   const boxesAnimationControls = useAnimation()
 
@@ -28,7 +28,7 @@ const ContactHero = () => {
       formAnimationControls.start('exit')
       boxesAnimationControls.start('exit')
     }
-  })
+  }, [isInView])
   return (
     <div ref={ref} className='contact-hero-container'>
       <div className='contact-hero-inner'>
