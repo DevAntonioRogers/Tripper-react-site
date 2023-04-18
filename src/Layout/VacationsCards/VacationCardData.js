@@ -23,7 +23,8 @@ export const VacationCardData = [
     hotel: true,
     allInvlusive: true,
     adultsOnly: true,
-    topRated: true
+    topRated: true,
+
 
   },
 

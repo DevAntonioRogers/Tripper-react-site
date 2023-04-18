@@ -8,7 +8,7 @@ const CruiseDetails = () => {
     {name}
 
     <div>
-      <img src={cruise.image} alt="" />
+
     </div>
   </div>;
 };
