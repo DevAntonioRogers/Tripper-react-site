@@ -34,14 +34,8 @@ const CruiseDetails = () => {
           <span>{cruise.stayAmount} {cruise.price}</span>
           <span>Departing from {cruise.depart}</span>
         </div>
-        <div className="cruise-description">
-          <div>
-            {cruise.details}
-          </div>
-
-          <div>
-            <button>INQUIRE NOW</button>
-          </div>
+        <div className="cruise-info">
+          {cruise.details}
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@
   gap: 3rem;
   position: relative;
   padding: 3rem;
-
 }
 
 .leftSide {
@@ -15,6 +14,7 @@
   align-items: center;
   height: calc(100vh - 80px);
   flex: 3;
+  margin-top: 2rem;
 }
 
 .mainImg{
@@ -50,39 +50,16 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  height: calc(100vh - 90px);
+  height: 100vh;
   position: sticky;
   position: -webkit-sticky;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 30px;
-  top: 1rem
-  
+  border: 1px solid black;
+  top: 0;
 }
 
-.cruiseInfo{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 2rem;
-}
-
-.cruiseInfo span{
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: rgb(74, 74, 74);
-}
-
-.cruiseInfo h1 {
+.cruiseName h1 {
   font-size: 4rem;
   text-transform: uppercase;
   white-space: nowrap;
   color: var(--primary-color);
-}
-
-.cruise-description{
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: rgb(74, 74, 74);
 }

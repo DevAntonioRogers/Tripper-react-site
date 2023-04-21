@@ -38,10 +38,6 @@ const CruiseDetails = () => {
           <div>
             {cruise.details}
           </div>
-
-          <div>
-            <button>INQUIRE NOW</button>
-          </div>
         </div>
       </div>
     </div>

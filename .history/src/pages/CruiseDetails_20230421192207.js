@@ -35,13 +35,7 @@ const CruiseDetails = () => {
           <span>Departing from {cruise.depart}</span>
         </div>
         <div className="cruise-description">
-          <div>
-            {cruise.details}
-          </div>
-
-          <div>
-            <button>INQUIRE NOW</button>
-          </div>
+          {cruise.details}
         </div>
       </div>
     </div>

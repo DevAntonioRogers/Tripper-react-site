@@ -29,19 +29,12 @@ const CruiseDetails = () => {
 
 
       <div className="rightSide">
-        <div className="cruiseInfo">
+        <div className="cruiseName">
           <h1>{cruise.name}</h1>
-          <span>{cruise.stayAmount} {cruise.price}</span>
-          <span>Departing from {cruise.depart}</span>
+          <span></span>
         </div>
-        <div className="cruise-description">
-          <div>
-            {cruise.details}
-          </div>
-
-          <div>
-            <button>INQUIRE NOW</button>
-          </div>
+        <div>
+          {cruise.details}
         </div>
       </div>
     </div>
