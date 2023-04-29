@@ -1,0 +1,15 @@
+.accordian {
+  width: 80%;
+  margin: auto;
+}
+
+.accordian h1 {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.accordian .accordian_question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

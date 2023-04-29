@@ -5,7 +5,6 @@ import { useState } from 'react'
 import './CruiseDetails.css'
 import Accordian from "../components/Accordian/Accordian";
 
-
 const CruiseDetails = () => {
 
   const [currentImage, setCurrentImage] = useState(0)

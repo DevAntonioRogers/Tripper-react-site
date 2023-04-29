@@ -1,0 +1,7 @@
+.accordian {
+  background-color: aquamarine;
+}
+
+.accordian_question {
+  display: flex;
+}

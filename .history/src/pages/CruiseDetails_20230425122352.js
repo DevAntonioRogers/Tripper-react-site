@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { useState } from 'react'
 
 import './CruiseDetails.css'
-import Accordian from "../components/Accordian/Accordian";
 
 
 const CruiseDetails = () => {
@@ -27,8 +26,6 @@ const CruiseDetails = () => {
           <img src={cruise.moreImages[2]} onClick={e => setCurrentImage(2)} alt='' />
           <img src={cruise.moreImages[3]} onClick={e => setCurrentImage(3)} alt='' />
         </div>
-
-        <Accordian />
       </div>
 
 

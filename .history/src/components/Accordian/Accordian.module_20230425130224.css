@@ -1,0 +1,11 @@
+.accordian {
+  background-color: aquamarine;
+}
+
+.accordian h1 {
+  font-size: 3rem;
+}
+
+.accordian_question {
+  display: flex;
+}
