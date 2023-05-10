@@ -6,7 +6,7 @@ import './CruiseDetails.css'
 import Accordian from "../components/Accordian/Accordian";
 import Map from '../components/Map/Map'
 
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaSwimmingPool } from "react-icons/fa";
 
 
 const CruiseDetails = () => {

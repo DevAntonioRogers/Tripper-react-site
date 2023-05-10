@@ -6,7 +6,7 @@ const LoginModal = () => {
 
   return (
     <>
-      <dialog id="favDialog" className='modal-overlay'>
+      <dialog open id="favDialog" className='modal-overlay'>
         <div onClick={(e) => e.stopPropagation()} className="modal-container">
           <h1>Welcome Back!</h1>
           <div className='modal-inner'>

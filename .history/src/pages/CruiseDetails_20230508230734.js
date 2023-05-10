@@ -6,7 +6,7 @@ import './CruiseDetails.css'
 import Accordian from "../components/Accordian/Accordian";
 import Map from '../components/Map/Map'
 
-import { FaStar } from "react-icons/fa";
+import { FaStar, FaSwimmingPool } from "react-icons/fa";
 
 
 const CruiseDetails = () => {
@@ -64,15 +64,11 @@ const CruiseDetails = () => {
         </div>
         <div className="cruise-highlights">
           <h1>Vacation Highlights</h1>
-          {cruise.pool && (<h2>Private Pool</h2>)}
-          {cruise.spa && (<h2>Luxury Spa</h2>)}
-          {cruise.arcade && (<h2>24 Hour Arcade</h2>)}
-          {cruise.smokingRooms && (<h2>Smoking Room Available</h2>)}
-          {cruise.roomService && (<h2>Room Service Available</h2>)}
-        </div>
+          {cruise.pool && (<div><h2>Private Pool</h2>)}
+          </div>
       </div>
-    </div>
-  )
+      </div>
+      )
 };
 
-export default CruiseDetails;
+      export default CruiseDetails;

@@ -35,10 +35,9 @@ const Accordian = () => {
     <div>
     {accordianData.map((data, index) => (
       <div key={index}>
-        <div className={openIndex === index ? `${classes.accordian_active}` : `${classes.accordian_question}`} onClick={() => setOpenIndex(openIndex === index ? null : index)}>
+        <details>
           <h1>{data.question}</h1>
-          <p>{openIndex === index ? '-' : '+'}</p>
-        </div>
+        </details>
         <div className={classes.answer}>
           {openIndex === index && <span>{data.answer}</span>}
         </div>

@@ -1,12 +1,12 @@
 import './Modals.css'
 import { Link } from 'react-router-dom'
 
-const LoginModal = () => {
-
+const LoginModal = ({ open, close }) => {
+  if (!open) return null
 
   return (
     <>
-      <dialog id="favDialog" className='modal-overlay'>
+      <dialog onClick={close} className='modal-overlay'>
         <div onClick={(e) => e.stopPropagation()} className="modal-container">
           <h1>Welcome Back!</h1>
           <div className='modal-inner'>
@@ -20,7 +20,7 @@ const LoginModal = () => {
                 <input type='password' placeholder='Password' />
               </div>
               <div>
-                <button type='submit'>Sign In</button>
+                <button onClick={close} type='submit'>Sign In</button>
                 <p>Forgot your password?</p>
               </div>
             </form>
@@ -28,6 +28,9 @@ const LoginModal = () => {
           </div>
         </div>
       </dialog>
+      <p>
+        <button id="showDialog">Show the dialog</button>
+      </p>
     </>
   );
 };

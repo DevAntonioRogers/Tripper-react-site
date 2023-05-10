@@ -28,6 +28,9 @@ const LoginModal = () => {
           </div>
         </div>
       </dialog>
+      <p>
+        <button id="showDialog">Show the dialog</button>
+      </p>
     </>
   );
 };

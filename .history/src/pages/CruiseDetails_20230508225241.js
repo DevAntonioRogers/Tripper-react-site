@@ -30,7 +30,6 @@ const CruiseDetails = () => {
   })
 
 
-
   return (
     <div className="cruiseDetails">
       <div className="leftSide">
@@ -64,11 +63,7 @@ const CruiseDetails = () => {
         </div>
         <div className="cruise-highlights">
           <h1>Vacation Highlights</h1>
-          {cruise.pool && (<h2>Private Pool</h2>)}
-          {cruise.spa && (<h2>Luxury Spa</h2>)}
-          {cruise.arcade && (<h2>24 Hour Arcade</h2>)}
-          {cruise.smokingRooms && (<h2>Smoking Room Available</h2>)}
-          {cruise.roomService && (<h2>Room Service Available</h2>)}
+
         </div>
       </div>
     </div>

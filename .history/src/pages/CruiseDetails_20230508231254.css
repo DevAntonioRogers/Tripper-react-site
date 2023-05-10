@@ -96,8 +96,6 @@
 .cruise-highlights {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  text-align: center;
 }
 
 .cruise-highlights h1 {
@@ -107,8 +105,4 @@
   color: var(--primary-color);
   padding-bottom: 2px;
   border-bottom: 2px solid var(--primary-color);
-}
-
-.cruise-highlights h2 {
-  font-size: 2rem;
 }

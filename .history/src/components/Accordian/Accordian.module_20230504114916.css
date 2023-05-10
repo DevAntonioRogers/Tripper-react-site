@@ -7,14 +7,14 @@
 }
 
 .accordian {
-  width: 100%;
+  width: 89%;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.accordian h1 {
+.question {
   font-size: 25px;
   font-weight: 100;
 }
@@ -32,6 +32,8 @@
   margin-bottom: 3rem;
   transition: 0.3s ease-in;
   cursor: pointer;
+  font-size: 25px;
+  font-weight: 100;
 }
 
 .accordian_question:hover {

@@ -7,20 +7,21 @@
 }
 
 .accordian {
-  width: 100%;
+  width: 89%;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-.accordian h1 {
+.question {
   font-size: 25px;
   font-weight: 100;
 }
 
 .accordian p {
   font-size: 3rem;
+  margin-bottom: 3rem;
 }
 
 .accordian_question {
@@ -29,9 +30,11 @@
   justify-content: space-between;
   padding-bottom: 1rem;
   border-bottom: 2px solid rgb(200, 200, 200);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   transition: 0.3s ease-in;
   cursor: pointer;
+  font-size: 25px;
+  font-weight: 100;
 }
 
 .accordian_question:hover {

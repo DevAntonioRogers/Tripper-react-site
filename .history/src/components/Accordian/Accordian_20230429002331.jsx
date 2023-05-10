@@ -30,22 +30,22 @@ const Accordian = () => {
   ]
   return (
     <>
-    <div className={classes.accordian}>
-    <h1 className={classes.accordian_title}>Frequently Asked Questions</h1>
-    <div>
+    <div className={classes.accordion}>
+  <h1 className={classes.accordion_title}>Frequently Asked Questions</h1>
+  <div>
     {accordianData.map((data, index) => (
-      <div key={index}>
-        <div className={openIndex === index ? `${classes.accordian_active}` : `${classes.accordian_question}`} onClick={() => setOpenIndex(openIndex === index ? null : index)}>
+      <details key={index} className={classes.accordion_item}>
+        <summary className={classes.accordion_question}>
           <h1>{data.question}</h1>
-          <p>{openIndex === index ? '-' : '+'}</p>
-        </div>
-        <div className={classes.answer}>
-          {openIndex === index && <span>{data.answer}</span>}
-        </div>
-      </div>
+          {/* <p>{openIndex === index ? '-' : '+'}</p> */}
+        </summary>
+     
+         <span>{data.answer}</span>
+      
+      </details>
     ))}
-    </div>
-    </div>
+  </div>
+</div>
     </>
   )
 };

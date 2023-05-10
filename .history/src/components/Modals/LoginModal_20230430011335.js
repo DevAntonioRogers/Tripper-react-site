@@ -6,7 +6,7 @@ const LoginModal = () => {
 
   return (
     <>
-      <dialog id="favDialog" className='modal-overlay'>
+      <dialog className='modal-overlay'>
         <div onClick={(e) => e.stopPropagation()} className="modal-container">
           <h1>Welcome Back!</h1>
           <div className='modal-inner'>
@@ -28,6 +28,9 @@ const LoginModal = () => {
           </div>
         </div>
       </dialog>
+      <p>
+        <button id="showDialog">Show the dialog</button>
+      </p>
     </>
   );
 };

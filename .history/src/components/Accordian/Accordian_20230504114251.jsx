@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const Accordian = () => {
 
-  const [openIndex, setOpenIndex] = useState(null)
 
   const accordianData = [
     {
@@ -35,13 +34,10 @@ const Accordian = () => {
     <div>
     {accordianData.map((data, index) => (
       <div key={index}>
-        <div className={openIndex === index ? `${classes.accordian_active}` : `${classes.accordian_question}`} onClick={() => setOpenIndex(openIndex === index ? null : index)}>
-          <h1>{data.question}</h1>
-          <p>{openIndex === index ? '-' : '+'}</p>
-        </div>
-        <div className={classes.answer}>
-          {openIndex === index && <span>{data.answer}</span>}
-        </div>
+        <details>
+          <summary>{data.question}</summary>
+          <p>{data.answer}</p>
+        </details>
       </div>
     ))}
     </div>
