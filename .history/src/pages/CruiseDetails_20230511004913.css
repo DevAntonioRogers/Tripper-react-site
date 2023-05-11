@@ -8,7 +8,7 @@
 
 .leftSide {
   width: 100%;
-  padding: 3rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -114,7 +114,7 @@
   color: rgb(74, 74, 74);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
   .cruiseDetails {
     flex-direction: column;
     height: 100%;
@@ -124,19 +124,7 @@
     position: static;
   }
 
-  .leftSide {
-    padding: 0;
-  }
-
-  .mainImg {
-    width: fit-content;
-  }
-
   .moreImg {
-    width: 100px;
-  }
-
-  .moreImg img {
-    width: 100%;
+    flex-direction: column;
   }
 }

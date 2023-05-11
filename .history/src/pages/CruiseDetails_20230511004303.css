@@ -17,8 +17,8 @@
 }
 
 .mainImg {
-  width: fit-content;
-  height: 400px;
+  min-width: 200px;
+  min-height: 400px;
   margin: auto;
 }
 
@@ -114,7 +114,7 @@
   color: rgb(74, 74, 74);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
   .cruiseDetails {
     flex-direction: column;
     height: 100%;
@@ -122,21 +122,5 @@
 
   .rightSide {
     position: static;
-  }
-
-  .leftSide {
-    padding: 0;
-  }
-
-  .mainImg {
-    width: fit-content;
-  }
-
-  .moreImg {
-    width: 100px;
-  }
-
-  .moreImg img {
-    width: 100%;
   }
 }

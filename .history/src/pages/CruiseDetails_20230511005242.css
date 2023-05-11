@@ -114,7 +114,7 @@
   color: rgb(74, 74, 74);
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
   .cruiseDetails {
     flex-direction: column;
     height: 100%;
@@ -133,10 +133,10 @@
   }
 
   .moreImg {
-    width: 100px;
+    width: 100%;
   }
 
   .moreImg img {
-    width: 100%;
+    width: fit-content;
   }
 }
