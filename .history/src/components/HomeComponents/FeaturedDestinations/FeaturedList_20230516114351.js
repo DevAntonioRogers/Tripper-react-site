@@ -35,14 +35,14 @@ const FeaturedList = () => {
       <h1 className="featured-heading">Our Featured Destinations</h1>
       <div ref={ref} className="featured-container">
 
-
-
-        <motion.div
-          animate={animation} >
-          <CruiseCards firstCards={4} />
-        </motion.div>
-
-
+        {featured.map((featured) => {
+          return (
+            <motion.div
+              animate={animation} className="card-featured-container" key={featured.id}>
+              <CruiseCards firstCards={4} />
+            </motion.div>
+          )
+   
 
       </div>
     </div>

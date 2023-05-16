@@ -1,5 +1,4 @@
 import FeaturedCard from "./FeaturedCard"
-import CruiseCards from "../../../Layout/CruisesCards/CruiseCards"
 import { selectFeatured } from "../../../shared/Data"
 import { motion, useAnimation, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
@@ -35,14 +34,14 @@ const FeaturedList = () => {
       <h1 className="featured-heading">Our Featured Destinations</h1>
       <div ref={ref} className="featured-container">
 
-
-
-        <motion.div
-          animate={animation} >
-          <CruiseCards firstCards={4} />
-        </motion.div>
-
-
+        {featured.map((featured) => {
+          return (
+            <motion.div
+              animate={animation} className="card-featured-container" key={featured.id}>
+              <FeaturedCard featured={featured} />
+            </motion.div>
+          )
+        })}
 
       </div>
     </div>

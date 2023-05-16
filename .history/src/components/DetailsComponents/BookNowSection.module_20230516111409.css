@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.image {
+  width: 500px;
+}
+
+.image img {
+  width: 100%;
+}

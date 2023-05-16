@@ -38,7 +38,7 @@ const FeaturedList = () => {
 
 
         <motion.div
-          animate={animation} >
+          animate={animation} className="card-featured-container" key={featured.id}>
           <CruiseCards firstCards={4} />
         </motion.div>
 

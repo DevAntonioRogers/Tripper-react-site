@@ -8,7 +8,6 @@ import Map from '../components/Map/Map'
 
 import { FaStar } from "react-icons/fa";
 import BookNowSection from "../components/DetailsComponents/BookNowSection";
-import Footer from "../components/Footer/Footer";
 
 
 const CruiseDetails = () => {
@@ -73,7 +72,6 @@ const CruiseDetails = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   )
 };

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.image {
+  width: 500px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.agentInfo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.agentInfo h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.agentInfo h3 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.agentInfo button {
+  width: 50%;
+}
